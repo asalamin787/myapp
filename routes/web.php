@@ -8,7 +8,7 @@ use Illuminate\Database\Migrations\myapp;
 
 
 //dashboard Categorie route //
-Route::middleware('auth')->group(function () {
+// Route::middleware('auth')->group(function () {
 
     Route::get('/category', [pageControllers::class, 'category'])->name('category');
     Route::post('/category/store', [pageControllers::class, 'categoryStore'])->name('category.store');
@@ -17,7 +17,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/edit_category/{category}', [pageControllers::class, 'edit_category'])->name('edit_category');
     Route::post('update_category/{category}', [pageControllers::class, 'update_category'])->name('update_category');
-});
+// });
 
 
 //dashboard slider route //

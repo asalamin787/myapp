@@ -19,7 +19,7 @@ class pageControllers extends Controller
     {
         Categorie::create([
             'name' => $request->name,
-            'slug' => $request->slug,
+            // 'slug' => $request->slug,
         ]);
         return redirect('/categorys_view',);
     }
@@ -37,7 +37,7 @@ class pageControllers extends Controller
     {
         $category->update([
             'name' => $request->name,
-            'slug' => $request->slug,
+            // 'slug' => $request->slug,
         ]);
         return redirect('/categorys_view',);
     }

@@ -20,11 +20,11 @@
                             aria-describedby="emailHelp">
 
                     </div>
-                    <div class="mb-3">
+                    {{-- <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Slug</label>
                         <input type="text" class="form-control" name="slug" id="exampleInputdecimal">
                     </div>
-                    
+                     --}}
 
                     <button type="submit" class="btn btn-primary" name="submit">Submit</button>
                 </form>
