@@ -11,9 +11,9 @@ use Illuminate\Database\Migrations\myapp;
 // Route::middleware('auth')->group(function () {
 
     Route::get('/category', [pageControllers::class, 'category'])->name('category');
-    Route::post('/category/store', [pageControllers::class, 'categoryStore'])->name('category.store');
+    Route::post('/category.store', [pageControllers::class, 'categoryStore'])->name('category.store');
 
-    Route::get('/categorys_view/', [pageControllers::class, 'categorys_view'])->name('categorys_view');
+    Route::get('/categorys_view', [pageControllers::class, 'categorys_view'])->name('categorys_view');
 
     Route::get('/edit_category/{category}', [pageControllers::class, 'edit_category'])->name('edit_category');
     Route::post('update_category/{category}', [pageControllers::class, 'update_category'])->name('update_category');
